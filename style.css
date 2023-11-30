@@ -1,0 +1,360 @@
+* {
+    margin: 0; /*So that by default extra margin is not occupied by our elements. We will set the margin*/
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box; /*Size of border or padding must fit the element's height and width*/
+    /* CSS stands for Cascading Style Sheets, which is a language that is used to style the appearance of web pages. CSS has a concept called the box model, which describes how each element on a web page is represented as a rectangular box with different properties, such as width, height, padding, border, and margin. */
+
+    /* If you set the box-sizing property to border-box, the width and height of an element will include the content, the padding, and the border. This means that if you set the width of an element to 100 pixels, and then add some padding and border to it, the actual width of the element will still be 100 pixels, because the padding and border are included in the calculation. This can make it easier to size and position elements on a web page, because you don’t have to worry about the extra space that padding and border might take up. */
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex; /*Everything comes at same line*/
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    height: 60px;
+    width: 113px;
+}
+
+.logo{
+    background-image: url("amazon_logo.png"); /*Now it won't show background image until we set height and width to outer div (here nav-logo)*/
+    height: 50px;
+    width: 100%;
+    background-size/*Specifies the size of the background images.*/: cover /*Scale the image, while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area.*/;
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+    
+}
+
+/* Box 2 */
+
+
+
+
+.add-first{
+    margin-left: 15px;
+    color: #CCCCCC;
+    font-size: 0.8rem; /*We'll try to add size in rem to be responsive*/
+}
+
+.add-second{
+    color: white;
+    font-size: 1rem;
+    margin-left: 3px;
+    
+}
+
+.add-icon{
+    display: flex;
+    align-items: center; /*The flex item’s margin box is centered in the cross axis within the line.*/
+}
+
+/* Box-3 */
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 899px;
+    height: 38px;
+    border-radius: 4px;
+    border: 3px solid transparent;
+    width: 57%;
+}
+
+.nav-search:hover{
+    border: 3px solid #febd68;
+}
+
+.search-select{
+    background-color: #e6e6e6;
+    width: 45px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    color: #7d7777;
+    
+}
+
+.search-input{
+    width: 100%; /*Remaining space occupied by search input*/
+    font-size: 1rem;
+    border: none;
+}
+
+.search-input:onclick{
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #febd68;
+    color: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+/* Box 4 & 5 */
+
+span{
+    font-size: 0.8rem;
+}
+
+.nav-second{
+    font-weight: 700;
+    
+}
+
+/* Box 6 */
+
+.nav-cart i {  /*Icon in navcart*/
+    font-size: 30px;
+}
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+/* Panel */
+
+.panel{
+    height: 39px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.panel-ops{
+    width: 81%;
+    font-size: 0.9rem;
+}
+
+.panel-ops p{
+    margin-left: 15px;
+    display: inline;
+}
+
+.panel-all i{
+    font-size: 17px;
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+/* Hero Section */
+
+.hero-section{
+    background-image: url("hero_img2.jpg");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    
+}
+
+.hero-message{
+    background-color: white;
+    height: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.hero-message a{
+    text-decoration: none;
+    color: #007185;
+}
+
+
+
+/*Shop-Section*/
+
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box{
+    height: 100px;
+    
+    width: 22%;
+    height: 400px;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 22px;
+}
+
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.box-content{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.box-content p a{
+    color: #007185;
+    text-decoration: none;
+}
+
+.bottombox{
+    margin-bottom: 22px;
+}
+
+/* Footer */
+
+.foot-panel1 a{
+    background-color: #37475a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 540;
+    text-decoration: none;
+}
+
+.foot-panel1 a:hover{
+    background-color: #4a5665;
+}
+
+.foot-panel2{
+    background-color: #232f3e;
+    height: 350px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.foot-panel2 ul p{
+    margin: 6px 0 14px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.foot-panel2 ul{
+    margin-top: 49px;
+}
+
+.foot-panel2 ul a{
+    display: block;
+    text-decoration: none;
+    color: #DDDDDD;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.foot-panel2 ul a:hover{
+    text-decoration: underline;
+}
+
+.arrowbro{
+    display: flex;
+}
+
+.foot-panel2 ul p a{
+    display: block;
+    text-decoration: none;
+    color: #DDDDDD;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+/* Footer 3 */
+
+.foot-panel3{
+    background-color: #232f3e;
+    color: white;
+    border-top: 0.1px solid white;
+    border-color: #4a5665;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foot-logo a{
+    height: 23px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-panel4{
+    background-color: #131A22;
+    height: 97.2px;
+    width: 100%;
+    color: #DDDDDD;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-1{
+    display: flex;
+    margin: 0 0 0 18px;
+    justify-content: center;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    
+}
+.line-1 p a{
+    color: #DDDDDD;
+    text-decoration: none;
+    padding: 0 0.6em;
+}
+
+.line-1 p a:hover{
+    text-decoration: underline;
+}
+
+
+
+.line-2{
+    display: flex;
+    
+    justify-content: center;
+    padding-bottom: 30px;
+    
+}
